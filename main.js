@@ -1,4 +1,3 @@
-// AXIOS GLOBALS
 axios.defaults.headers.common['X-Auth-Token'] =
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c';
 
@@ -179,7 +178,6 @@ function showOutput(res) {
   <div class="card card-body mb-4">
     <h5>Status: ${res.status}</h5>
   </div>
-
   <div class="card mt-3">
     <div class="card-header">
       Headers
@@ -188,7 +186,6 @@ function showOutput(res) {
       <pre>${JSON.stringify(res.headers, null, 2)}</pre>
     </div>
   </div>
-
   <div class="card mt-3">
     <div class="card-header">
       Data
@@ -197,7 +194,6 @@ function showOutput(res) {
       <pre>${JSON.stringify(res.data, null, 2)}</pre>
     </div>
   </div>
-
   <div class="card mt-3">
     <div class="card-header">
       Config
